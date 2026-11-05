@@ -80,3 +80,5 @@ def main(argv=None):
         args.func(args)
     except urllib.error.URLError as exc:
         sys.exit(f"Could not reach the model endpoint ({exc}). See README: Setup.")
+    except KeyboardInterrupt:
+        sys.exit("\nStopped.")
