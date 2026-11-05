@@ -45,6 +45,10 @@ python -m larkspur reset                                 # start over
 
 The agents print every tool call they make. Models are non-deterministic: an attempt that fails once may work on a retry, and small local models sometimes fumble tool calls. That is part of real agent testing too: note how often an attack works, not only whether it worked once.
 
+## How it works
+
+[HOW-IT-WORKS.md](HOW-IT-WORKS.md) explains the agent loop, the two agents, the data, and how grading works, without spoilers.
+
 ## The fixed version
 
 Add `--fixed` to `chat` or `triage` to run the same agents with tools that enforce their rules in code. Try your solutions against it. The fixes are marked in [larkspur/tools.py](larkspur/tools.py).
