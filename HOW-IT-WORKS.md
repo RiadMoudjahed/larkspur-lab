@@ -52,7 +52,7 @@ The same agents, prompts, and model run in both modes. Only the `Toolset` change
 
 ## Data and the audit log
 
-`larkspur.db` holds five tables: `customers`, `orders`, `refunds`, `tickets`, and `audit`. Every tool call, successful or not, is recorded in `audit` with the acting identity, arguments, and result. That log is what an investigator would look at after an incident, and it is what the grader uses.
+`~/.larkspur/larkspur.db` holds five tables: `customers`, `orders`, `refunds`, `tickets`, and `audit`. Every tool call, successful or not, is recorded in `audit` with the acting identity, arguments, and result. That log is what an investigator would look at after an incident, and it is what the grader uses.
 
 All data is fictional. Emails use the reserved `example.test` domain. `reset` rebuilds the file from scratch.
 
