@@ -14,11 +14,13 @@ Everything here is fictional and runs on your machine. The lab's tools only touc
 
 ## Setup
 
-Requirements: Python 3.10 or newer. Larkspur has no dependencies. Install it on Windows, macOS or Linux:
+Requirements: Python 3.10 or newer. Larkspur has no dependencies.
 
 ```bash
-pipx install git+https://github.com/RiadMoudjahed/larkspur-lab
+pip install larkspur-lab
 ```
+
+On recent Linux distributions, use `pipx install larkspur-lab`. If your system cannot find the `larkspur` command after installing, use `python -m larkspur` instead.
 
 Then run `larkspur` for a guide to the whole lab.
 
